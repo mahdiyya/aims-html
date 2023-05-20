@@ -1,0 +1,68 @@
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.text {
+  // Color
+  &.primary {
+    color: var(--color-black);
+  }
+  &.secondary {
+    color: var(--color-black-secondary);
+  }
+  &.blue-primary {
+    color: var(--color-primary);
+  }
+  &.blue-secondary {
+    color: var(--color-secondary);
+  }
+  &.white {
+    color: var(--color-white);
+  }
+
+  // Size
+  &.x-small {
+    font-size: var(--text-xs);
+  }
+  &.small {
+    font-size: var(--text-sm);
+  }
+  &.regular {
+    font-size: var(--text-md);
+  }
+  &.s-large {
+    font-size: var(--text-lg);
+  }
+  &.x-large {
+    font-size: var(--text-xl);
+  }
+  &.x-x-large {
+    font-size: var(--text-xxl);
+  }
+  &.x-x-x-large {
+    font-size: var(--text-xxxl);
+  }
+
+  // Weight
+  &.light {
+    font-weight: var(--text-light);
+  }
+  &.regular {
+    font-weight: var(--text-regular);
+  }
+  &.semi-bold {
+    font-weight: var(--text-semiBold);
+  }
+  &.bold {
+    font-weight: var(--text-bold);
+  }
+  &.extra-bold {
+    font-weight: var(--text-extraBold);
+  }
+
+  // Family Name
+  &.roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+}
