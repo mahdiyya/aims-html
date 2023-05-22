@@ -342,6 +342,7 @@ main {
         height: calc((var(--text-xxl)) * 1.2);
         font-size: var(--text-lg);
         border: 1px var(--color-gray) solid;
+        padding-left: 1rem;
       }
       button {
         position: absolute;
