@@ -11903,7 +11903,6 @@ if (
       i = 2 * n,
       r = 3 * n,
       o = 4 * n
-    console.log(o, r)
     for (const e of t) e.addEventListener('click', a)
     for (var s = 0; s < sections.length; s++) sections[s]
     function a(t) {
