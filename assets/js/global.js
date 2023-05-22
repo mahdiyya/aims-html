@@ -11846,6 +11846,9 @@ var solNav = document.getElementsByClassName('solution-nav'),
   solSection = document.getElementsByClassName('section-solt'),
   cardCase = document.getElementsByClassName('card-case'),
   menu = document.getElementById('menu'),
+  popUpCountry = document.getElementsByClassName('country-list'),
+  popUpContent = document.getElementsByClassName('popup-content'),
+  closeBtnModal = document.getElementsByClassName('close-btn'),
   sections = document.querySelectorAll('section')
 NProgress.start()
 var interval = setInterval(function () {
@@ -11953,3 +11956,19 @@ $('#ctaButton').on('click', function () {
 $('#close').on('click', function () {
   $('#ctaForm').removeClass('active')
 })
+
+for (let c = 0; c < popUpCountry.length; c++) {
+  popUpCountry[c].onclick = function (t) {
+    this.classList.add('active'), $(this).siblings().removeClass('active'), $('#modals').addClass('active'), t <= popUpCountry.length - 1 && (popUpContent[t].classList.add('active'), $(popUpContent[t]).siblings('modals').removeClass('active'))
+  }.bind(popUpCountry[c], c)
+}
+const closeModal = () => {
+  $('#modals').removeClass('active')
+  $('.popup-content').removeClass('active')
+  $('.country-list').removeClass('active')
+}
+if (closeBtnModal) {
+  for (let c = 0; c < closeBtnModal.length; c++) {
+    closeBtnModal[c].addEventListener('click', closeModal, false)
+  }
+}
