@@ -6,7 +6,7 @@
       // add .min.css as the extension
       "extensionName": ".css",
       // define the output/save path
-      "savePath": "~/../CSS"
+      "savePath": "~/../css"
     }
   ]
 }

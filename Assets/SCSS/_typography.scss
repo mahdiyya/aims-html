@@ -20,6 +20,12 @@ p {
   &.white {
     color: var(--color-white);
   }
+  &.grey {
+    color: var(--color-gray);
+  }
+  &.grey-light {
+    color: var(--color-grayLight);
+  }
 
   // Size
   &.x-small {
@@ -32,7 +38,7 @@ p {
     font-size: var(--text-md);
   }
   &.s-large {
-    font-size: var(--text-lg);
+    font-size: calc(var(--text-md) * 1.4);
   }
   &.x-large {
     font-size: var(--text-xl);
@@ -64,5 +70,10 @@ p {
   // Family Name
   &.roboto {
     font-family: 'Roboto', sans-serif;
+  }
+
+  //style
+  &.uppercase {
+    text-transform: uppercase;
   }
 }
