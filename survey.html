@@ -54,13 +54,34 @@
           <div class="home-card survey">
             <p>Bantu kami dalam memperbaiki pelayanan kami, dengan memberikan penilaian pada form dibawah</p>
             <form action="submit">
-              <p>Apakah ada catatan lain yang ingin ditambahkan ?</p>
               <div class="survey-rate" aria-required="true">
-                <input type="radio" id="superbad" name="superbad" /><label for="superbad"><img src="assets/images/survey-emoticon/sb.jpg" alt="super bad" /></label> <input type="radio" id="bad" name="bad" /><label for="bad"><img src="assets/images/survey-emoticon/b.jpg" alt="bad" /></label>
-                <input type="radio" id="neutral" name="neutral" /><label for="neutral"><img src="assets/images/survey-emoticon/n.jpg" alt="neutral" /></label> <input type="radio" id="good" name="good" /><label for="good"><img src="assets/images/survey-emoticon/g.jpg" alt="good" /></label>
-                <input type="radio" id="supergood" name="supergood" /><label for="supergood"><img src="assets/images/survey-emoticon/gg.jpg" alt="super good" /></label>
+                <input type="radio" id="superbad" name="rate" value="0" /><label for="superbad"
+                  ><img src="assets/images/survey-emoticon/sb.jpg" alt="super bad" />
+                  <p class="text semi-bold primary regular" text-align="center">Sangat Buruk</p></label
+                >
+                <input type="radio" id="bad" name="rate" value="1" />
+                <label for="bad">
+                  <img src="assets/images/survey-emoticon/b.jpg" alt="bad" />
+                  <p class="text semi-bold primary regular" text-align="center">Buruk</p>
+                </label>
+                <input type="radio" id="neutral" name="rate" value="2" />
+                <label for="neutral">
+                  <img src="assets/images/survey-emoticon/n.jpg" alt="neutral" />
+                  <p class="text semi-bold primary regular" text-align="center">Biasa Saja</p>
+                </label>
+                <input type="radio" id="good" name="rate" value="3" />
+                <label for="good">
+                  <img src="assets/images/survey-emoticon/g.jpg" alt="good" />
+                  <p class="text semi-bold primary regular" text-align="center">Bagus</p>
+                </label>
+                <input type="radio" id="supergood" name="rate" value="4" />
+                <label for="supergood">
+                  <img src="assets/images/survey-emoticon/gg.jpg" alt="super good" />
+                  <p class="text semi-bold primary regular" text-align="center">Keren Banget deh!</p>
+                </label>
               </div>
-              <textarea name="saran" id="saran" cols="40" rows="5" placeholder="Tulis di sini" class="text-field"></textarea>
+              <p>Apakah ada catatan lain yang ingin ditambahkan ?</p>
+              <textarea name="saran" id="saran" cols="40" rows="4" placeholder="Tulis di sini" class="text-field"></textarea>
               <button type="submit" class="btn-primary text white s-large semi-bold">Kirim</button>
             </form>
           </div>
@@ -70,7 +91,7 @@
     <footer>
       <div class="footer-bar">
         <p class="text x-small roboto grey">Hak Cipta ©2020, BP2MI. Semua hak dilindungi Situs resmi Badan Pelindungan Pekerja Migran Indonesia</p>
-        <img src="assets/images/footer-acc.svg" alt="acc svg" class="acc" />
+        <img src="assets/svg/footer-acc.svg" alt="acc svg" class="acc" />
       </div>
     </footer>
 
