@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Detail Lowongan</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet preload prefetch" type="text/css" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header">
+      <img src="assets/images/logo/BP2MI_logo_GIF.gif" alt="logo BP2MI" class="logo-image" />
+      <div class="info-bar">
+        <div class="link-bar">
+          <a href="/" class="text x-small semi-bold blue-primary">Profil BP2MI</a>
+          <span class="text x-small semi-bold blue-primary">|</span>
+          <a href="/survey.html" class="text x-small semi-bold blue-primary">Survey</a>
+        </div>
+        <div class="pengaduan-bar">
+          <p class="text x-small semi-bold white">Pengaduan : <strong class="text extra-bold">0800 1000</strong></p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="main info-pengaduan">
+        <div class="row">
+          <a href="/">
+            <img src="assets/svg/back-button.svg" alt="business bag icon" class="back-button" />
+          </a>
+          <h1 class="text primary x-x-x-large uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-durartion="5000">Informasi Pengaduan</h1>
+        </div>
+        <div class="swiper" id="slider-card">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="200" data-aos-durartion="3000">
+              <img src="assets/images/pengaduan-1.jpg" alt="pengaduan langsung" />
+            </div>
+            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="250" data-aos-durartion="3000">
+              <img src="assets/images/pengaduan-2.jpg" alt="pengaduan telepon email" />
+            </div>
+            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="300" data-aos-durartion="3000">
+              <img src="assets/images/pengaduan-3.jpg" alt="pengaduan surat/tertulis" />
+            </div>
+            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="350" data-aos-durartion="3000">
+              <img src="assets/images/pengaduan-3.jpg" alt="pengaduan surat/tertulis" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p class="text x-small roboto grey">Hak Cipta ©2020, BP2MI. Semua hak dilindungi Situs resmi Badan Pelindungan Pekerja Migran Indonesia</p>
+        <img src="assets/svg/footer-acc.svg" alt="acc svg" class="acc" />
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('#slider-card', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 3,
+        spaceBetween: 16,
+      })
+    </script>
+    <script src="assets/js/global.js" async defer></script>
+  </body>
+</html>
