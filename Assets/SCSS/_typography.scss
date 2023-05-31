@@ -37,6 +37,9 @@ p {
   &.regular {
     font-size: var(--text-md);
   }
+  &.s-s-large {
+    font-size: calc(var(--text-md) * 1.15);
+  }
   &.s-large {
     font-size: calc(var(--text-md) * 1.4);
   }
@@ -54,8 +57,11 @@ p {
   &.light {
     font-weight: var(--text-light);
   }
-  &.regular {
+  &.size-regular {
     font-weight: var(--text-regular);
+  }
+  &.semi-regular {
+    font-weight: var(--text-semiRegular);
   }
   &.semi-bold {
     font-weight: var(--text-semiBold);
@@ -75,5 +81,9 @@ p {
   //style
   &.uppercase {
     text-transform: uppercase;
+  }
+
+  .text-center {
+    text-align: center;
   }
 }

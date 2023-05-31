@@ -14,7 +14,7 @@ var p
   var n = [],
     i = Object.getPrototypeOf,
     r = n.slice,
-    o = n.flat
+    o = n.flatx
       ? function (t) {
           return n.flat.call(t)
         }
@@ -11846,10 +11846,12 @@ var solNav = document.getElementsByClassName('solution-nav'),
   solSection = document.getElementsByClassName('section-solt'),
   cardCase = document.getElementsByClassName('card-case'),
   menu = document.getElementById('menu'),
-  popUpCountry = document.getElementsByClassName('country-list'),
+  popUpNav = document.getElementsByClassName('modal-nav'),
   popUpContent = document.getElementsByClassName('popup-content'),
   closeBtnModal = document.getElementsByClassName('close-btn'),
-  sections = document.querySelectorAll('section')
+  sections = document.querySelectorAll('section'),
+  navigations = document.getElementsByClassName('navigation'),
+  contentContainer = document.getElementsByClassName('tab')
 NProgress.start()
 var interval = setInterval(function () {
   NProgress.inc()
@@ -11957,18 +11959,35 @@ $('#close').on('click', function () {
   $('#ctaForm').removeClass('active')
 })
 
-for (let c = 0; c < popUpCountry.length; c++) {
-  popUpCountry[c].onclick = function (t) {
-    this.classList.add('active'), $(this).siblings().removeClass('active'), $('#modals').addClass('active'), t <= popUpCountry.length - 1 && (popUpContent[t].classList.add('active'), $(popUpContent[t]).siblings('modals').removeClass('active'))
-  }.bind(popUpCountry[c], c)
+for (let c = 0; c < popUpNav.length; c++) {
+  popUpNav[c].onclick = function (t) {
+    this.classList.add('active'), $(this).siblings().removeClass('active'), $('#modals').addClass('active'), t <= popUpNav.length - 1 && (popUpContent[t].classList.add('active'), $(popUpContent[t]).siblings('modals').removeClass('active'))
+  }.bind(popUpNav[c], c)
 }
 const closeModal = () => {
   $('#modals').removeClass('active')
   $('.popup-content').removeClass('active')
   $('.country-list').removeClass('active')
+  $('#pop-form').addClass('active')
+  $('#pop-detail').removeClass('active')
 }
 if (closeBtnModal) {
   for (let c = 0; c < closeBtnModal.length; c++) {
     closeBtnModal[c].addEventListener('click', closeModal, false)
   }
+}
+
+const submitPengaduan = (e) => {
+  e.preventDefault()
+  $('#pop-form').removeClass('active')
+  $('#pop-detail').addClass('active')
+}
+const searchpengaduan = document.getElementById('checkpengaduan')
+searchpengaduan.addEventListener('click', submitPengaduan, false)
+// $('#checkpengaduan').addEventListener('click', submitPengaduan, false)
+
+for (let c = 0; c < navigations.length; c++) {
+  navigations[c].onclick = function (t) {
+    this.classList.add('active'), $(this).siblings().removeClass('active'), t <= navigations.length - 1 && (contentContainer[t].classList.add('active'), $(contentContainer[t]).siblings('.tab').removeClass('active'))
+  }.bind(navigations[c], c)
 }
