@@ -33,40 +33,194 @@
       </div>
     </div>
     <main>
-      <div class="row main bekerja">
-        <div class="main-graphic">
-          <!-- BACKGROUND -->
-          <img src="assets/svg/cloud.svg" alt="cloud" class="q-mark" />
-          <img src="assets/svg/plane-big.svg" alt="plane moving to top" class="line-bg" />
-
-          <!-- ILUSTRASI YANG DIGANTI -->
-          <img src="assets/svg/bekerja-main-graph.svg" class="petugas" alt="a man reading while waiting to board" />
+      <div class="main info-pengaduan template-3 width-strecth">
+        <div class="row title-bar">
+          <a href="/">
+            <img src="assets/svg/back-button.svg" alt="business bag icon" class="back-button" />
+          </a>
+          <h1 class="text primary x-x-x-large uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-durartion="5000">Informasi Lowongan</h1>
+          <form action="" class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+            <input type="text" name="search-bar" placeholder="Cari Berdasar kata kunci" id="search-bar" class="bar" />
+            <button><span class="material-symbols-outlined">search</span></button>
+          </form>
         </div>
-        <div class="main-content">
-          <div class="row">
-            <a href="/">
-              <img src="assets/svg/back-button.svg" alt="business bag icon" class="back-button" />
-            </a>
-            <h1 class="text primary x-x-x-large uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-durartion="5000">
-              Pusat Layanan INFORMASI <br />
-              Publik BP2MI
-            </h1>
-          </div>
-          <div class="home-card">
-            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="1400" data-aos-durartion="2000">
-              <h2>Skema P to P</h2>
+        <div class="container template-3">
+          <div class="row template-4 lowongan-list">
+            <div class="row-30 filter-table">
+              <div class="head">
+                <p class="text s-large semi-regular">Filters</p>
+              </div>
+              <form action="submit">
+                <div class="checkbox-filter">
+                  <input type="checkbox" name="negara" id="negara" value="negara" />
+                  <label class="text s-s-large light" for="negara">Pilih Negara</label>
+                </div>
+                <div class="checkbox-filter">
+                  <input type="checkbox" name="p3mi" id="p3mi" value="p3mi" />
+                  <label class="text s-s-large light" for="p3mi">Pilih P3MI</label>
+                </div>
+                <div class="checkbox-filter">
+                  <input type="checkbox" name="pekerjaan" id="pekerjaan" value="pekerjaan" />
+                  <label class="text s-s-large light" for="pekerjaan">Pilih Bidang Pekerjaan</label>
+                </div>
+                <div class="checkbox-filter">
+                  <input type="checkbox" name="pendidikan" id="pendidikan" value="pendidikan" />
+                  <label class="text s-s-large light" for="pendidikan">Pilih Pendidikan</label>
+                </div>
+                <button type="submit" class="btn-primary text regular semi-bold white text-center">Cari</button>
+              </form>
             </div>
-            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="1500" data-aos-durartion="2000">
-              <h2>Skema Mandiri</h2>
-            </div>
-            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="1600" data-aos-durartion="2000">
-              <h2>Skema UKPS</h2>
-            </div>
-            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="1700" data-aos-durartion="2000">
-              <h2>Skema SSW</h2>
-            </div>
-            <div class="card" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="1800" data-aos-durartion="2000">
-              <h2>Skema SP2T</h2>
+            <div class="container">
+              <div class="row table-filter">
+                <h2 class="text s-large semi-bold primary"><span>8003</span> Lowongan Ditemukan</h2>
+                <form action="" class="form-filter">
+                  <p class="text grey small robot">Urut Berdasar:</p>
+                  <select name="jabatan" id="jabatan">
+                    <option value="" disabled selected>Jabatan</option>
+                    <option value="kota A">Sekretaris</option>
+                    <option value="kota B">Admin</option>
+                  </select>
+                  <select name="sortby" id="sortby">
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                  </select>
+                </form>
+              </div>
+              <div class="row-60">
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-my"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/lowongan-detail.html" class="card full">
+                  <div class="row">
+                    <span class="fi fi-jp"></span>
+                    <div class="info">
+                      <p class="text s-large semi-regular blue-secondary">Activities On The Production Line (ACROSS BORDERLAND CONSULTING S.R.O)</p>
+                      <p class="text small grey uppercase">DIREKTORAT PENEMPATAN PEMERINTAH KAWASAN ASIA DAN AFRIKA</p>
+                      <div class="row">
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> location_on </span>
+                          <p class="text x-small grey-light roboto">Jepang</p>
+                        </div>
+                        <div class="phone-container row">
+                          <span class="material-symbols-outlined"> payments </span>
+                          <p class="text x-small grey-light roboto">1500 - 1800</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

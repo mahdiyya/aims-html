@@ -14,7 +14,7 @@ var p
   var n = [],
     i = Object.getPrototypeOf,
     r = n.slice,
-    o = n.flat
+    o = n.flatx
       ? function (t) {
           return n.flat.call(t)
         }
@@ -11968,12 +11968,23 @@ const closeModal = () => {
   $('#modals').removeClass('active')
   $('.popup-content').removeClass('active')
   $('.country-list').removeClass('active')
+  $('#pop-form').addClass('active')
+  $('#pop-detail').removeClass('active')
 }
 if (closeBtnModal) {
   for (let c = 0; c < closeBtnModal.length; c++) {
     closeBtnModal[c].addEventListener('click', closeModal, false)
   }
 }
+
+const submitPengaduan = (e) => {
+  e.preventDefault()
+  $('#pop-form').removeClass('active')
+  $('#pop-detail').addClass('active')
+}
+const searchpengaduan = document.getElementById('checkpengaduan')
+searchpengaduan.addEventListener('click', submitPengaduan, false)
+// $('#checkpengaduan').addEventListener('click', submitPengaduan, false)
 
 for (let c = 0; c < navigations.length; c++) {
   navigations[c].onclick = function (t) {
