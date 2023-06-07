@@ -23,7 +23,7 @@
       <img src="assets/images/logo/BP2MI_logo_GIF.gif" alt="logo BP2MI" class="logo-image" />
       <div class="info-bar">
         <div class="link-bar">
-          <a href="/" class="text x-small semi-bold blue-primary">Profil BP2MI</a>
+          <a href="/profile-bp2mi.html" class="text x-small semi-bold blue-primary">Profil BP2MI</a>
           <span class="text x-small semi-bold blue-primary">|</span>
           <a href="/survey.html" class="text x-small semi-bold blue-primary">Survey</a>
         </div>
@@ -39,10 +39,10 @@
             <img src="assets/svg/back-button.svg" alt="business bag icon" class="back-button" />
           </a>
           <h1 class="text primary x-x-x-large uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-durartion="5000">Informasi Lowongan</h1>
-          <form action="" class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
-            <input type="text" name="search-bar" placeholder="Cari Berdasar kata kunci" id="search-bar" class="bar" />
+          <div class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+            <input type="text" name="search-bar" placeholder="Cari Berdasar kata kunci" id="search-bar" class="bar text s-s-large light" class="bar" />
             <button><span class="material-symbols-outlined">search</span></button>
-          </form>
+          </div>
         </div>
         <div class="container template-3">
           <div class="row template-4 lowongan-list">
@@ -51,25 +51,132 @@
                 <p class="text s-large semi-regular">Filters</p>
               </div>
               <form action="submit">
-                <div class="checkbox-filter">
-                  <input type="checkbox" name="negara" id="negara" value="negara" />
-                  <label class="text s-s-large light" for="negara">Pilih Negara</label>
-                </div>
-                <div class="checkbox-filter">
-                  <input type="checkbox" name="p3mi" id="p3mi" value="p3mi" />
-                  <label class="text s-s-large light" for="p3mi">Pilih P3MI</label>
-                </div>
-                <div class="checkbox-filter">
-                  <input type="checkbox" name="pekerjaan" id="pekerjaan" value="pekerjaan" />
-                  <label class="text s-s-large light" for="pekerjaan">Pilih Bidang Pekerjaan</label>
-                </div>
-                <div class="checkbox-filter">
-                  <input type="checkbox" name="pendidikan" id="pendidikan" value="pendidikan" />
-                  <label class="text s-s-large light" for="pendidikan">Pilih Pendidikan</label>
+                <div class="filter-container-overflow">
+                  <div class="checkbox-filter">
+                    <input type="checkbox" name="negara" id="negara" value="negara" class="checkbox-parent" />
+                    <label class="text s-s-large light" for="negara">
+                      <p>Pilih Negara</p>
+                      <div class="filter-detail">
+                        <div class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+                          <input type="text" name="search-bar" placeholder="Cari Negara" id="search-bar" class="bar text s-s-large light" class="bar text s-s-large light" />
+                          <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <div class="checkbox-container">
+                          <div class="row">
+                            <input type="checkbox" name="afghanistan" id="afghanistan" value="afghanistan" />
+                            <label class="text s-s-large light" for="afghanistan">Afghanistan</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="afrika-selatan" id="afrika-selatan" value="afrika-selatan" />
+                            <label class="text s-s-large light" for="afrika-selatan">Afrika Selatan</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="albania" id="albania" value="albania" />
+                            <label class="text s-s-large light" for="albania">Albania</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="aljazair" id="aljazair" value="aljazair" />
+                            <label class="text s-s-large light" for="aljazair">Aljazair</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="Amerika-serikat" id="Amerika-serikat" value="Amerika-serikat" />
+                            <label class="text s-s-large light" for="Amerika-serikat">Amerika Serikat</label>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox-filter">
+                    <input type="checkbox" name="p3mi" id="p3mi" value="p3mi" class="checkbox-parent" />
+                    <label class="text s-s-large light" for="p3mi">
+                      <p>Pilih P3MI</p>
+                      <div class="filter-detail">
+                        <div class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+                          <input type="text" name="search-bar" placeholder="Cari P3MI" id="search-bar" class="bar text s-s-large light" class="bar" />
+                          <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <div class="checkbox-container">
+                          <div class="row">
+                            <input type="checkbox" name="p3mi-1" id="p3mi-1" value="p3mi-1" />
+                            <label class="text s-s-large light" for="p3mi-1">P3mi-1</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="P3mi-2" id="P3mi-2" value="P3mi-2" />
+                            <label class="text s-s-large light" for="P3mi-2">P3mi-2</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="P3mi-3" id="P3mi-3" value="P3mi-3" />
+                            <label class="text s-s-large light" for="P3mi-3">P3mi-3</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="P3mi-4" id="P3mi-4" value="P3mi-4" />
+                            <label class="text s-s-large light" for="P3mi-4">P3mi-4</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="P3mi-5" id="P3mi-5" value="P3mi-5" />
+                            <label class="text s-s-large light" for="P3mi-5">P3mi-5</label>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox-filter">
+                    <input type="checkbox" name="pekerjaan" id="pekerjaan" value="pekerjaan" class="checkbox-parent" />
+                    <label class="text s-s-large light" for="pekerjaan">
+                      <p>Pilih Bidang Pekerjaan</p>
+                      <div class="filter-detail">
+                        <div class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+                          <input type="text" name="search-bar" placeholder="Cari Pekerjaan" id="search-bar" class="bar text s-s-large light" class="bar" />
+                          <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <div class="checkbox-container">
+                          <div class="row">
+                            <input type="checkbox" name="Pekerjaan-1" id="Pekerjaan-1" value="Pekerjaan-1" />
+                            <label class="text s-s-large light" for="Pekerjaan-1">Pekerjaan-1</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="Pekerjaan-2" id="Pekerjaan-2" value="Pekerjaan-2" />
+                            <label class="text s-s-large light" for="Pekerjaan-2">Pekerjaan-2</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="Pekerjaan-3" id="Pekerjaan-3" value="Pekerjaan-3" />
+                            <label class="text s-s-large light" for="Pekerjaan-3">Pekerjaan-3</label>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox-filter">
+                    <input type="checkbox" name="pendidikan" id="pendidikan" value="pendidikan" class="checkbox-parent" />
+                    <label class="text s-s-large light" for="pendidikan">
+                      <p>Pilih Pendidikan</p>
+                      <div class="filter-detail">
+                        <div class="search-bar" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-delay="400" data-aos-durartion="2000">
+                          <input type="text" name="search-bar" placeholder="Cari Pendidikan" id="search-bar" class="bar text s-s-large light" class="bar" />
+                          <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <div class="checkbox-container">
+                          <div class="row">
+                            <input type="checkbox" name="SLTA" id="SLTA" value="SLTA" />
+                            <label class="text s-s-large light" for="SLTA">SMA dan sederajat</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="S1" id="S1" value="S1" />
+                            <label class="text s-s-large light" for="S1">S1</label>
+                          </div>
+                          <div class="row">
+                            <input type="checkbox" name="Magister" id="Magister" value="Magister" />
+                            <label class="text s-s-large light" for="Magister">Magister</label>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
                 </div>
                 <button type="submit" class="btn-primary text regular semi-bold white text-center">Cari</button>
               </form>
             </div>
+
             <div class="container">
               <div class="row table-filter">
                 <h2 class="text s-large semi-bold primary"><span>8003</span> Lowongan Ditemukan</h2>
