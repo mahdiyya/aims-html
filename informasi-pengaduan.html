@@ -39,7 +39,7 @@
             <img src="assets/svg/back-button.svg" alt="business bag icon" class="back-button" />
           </a>
           <h1 class="text primary x-x-x-large uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-durartion="5000">Informasi Pengaduan</h1>
-          <div class="card-bg absolute modal-nav">
+          <div class="card-bg absolute" id="form-modal">
             <div class="row">
               <p class="text s-s-large white semi-bold">Cek Status Pengaduan</p>
               <span class="material-symbols-outlined text blue-secondary bold">search</span>
@@ -48,25 +48,27 @@
         </div>
         <div class="swiper" id="slider-card">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="200" data-aos-durartion="3000">
+            <div class="swiper-slide modal-nav" data-aos="fade-in" data-aos-delay="200" data-aos-durartion="3000">
               <img src="assets/images/pengaduan-1.jpg" alt="pengaduan langsung" />
             </div>
-            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="250" data-aos-durartion="3000">
+            <div class="swiper-slide modal-nav" data-aos="fade-in" data-aos-delay="250" data-aos-durartion="3000">
               <img src="assets/images/pengaduan-2.jpg" alt="pengaduan telepon email" />
             </div>
-            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="300" data-aos-durartion="3000">
+            <div class="swiper-slide modal-nav" data-aos="fade-in" data-aos-delay="300" data-aos-durartion="3000">
               <img src="assets/images/pengaduan-3.jpg" alt="pengaduan surat/tertulis" />
             </div>
-            <div class="swiper-slide" data-aos="fade-in" data-aos-delay="350" data-aos-durartion="3000">
-              <img src="assets/images/pengaduan-3.jpg" alt="pengaduan surat/tertulis" />
+            <div class="swiper-slide modal-nav" data-aos="fade-in" data-aos-delay="350" data-aos-durartion="3000">
+              <img src="assets/images/pengaduan-3.jpg" alt="pengaduan telepon email" />
             </div>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-      <div class="modals modal-form" id="modals">
-        <div class="popup-content">
+
+      <!-- MODAL FORM PENGADUAN NUMBER -->
+      <div class="modals modal-form" id="modal-form">
+        <div class="popup-content-form" id="content-form">
           <div class="container pop-form active" id="pop-form">
             <p class="text uppercase semi-bold white x-large">Masukkan nomor tiket pengaduan</p>
             <div class="pop-container">
@@ -207,6 +209,26 @@
               </div>
             </div>
           </div>
+          <div class="close-btn" id="closebtn"><span class="material-symbols-outlined">close</span></div>
+        </div>
+      </div>
+
+      <!-- MODAL POPUP IMAGES FROM CARD -->
+      <div class="modals" id="modals">
+        <div class="popup-content">
+          <img src="assets/images/pengaduan-1.jpg" alt="pengaduan langsung" />
+          <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
+        </div>
+        <div class="popup-content">
+          <img src="assets/images/pengaduan-2.jpg" alt="pengaduan telepon email" />
+          <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
+        </div>
+        <div class="popup-content">
+          <img src="assets/images/pengaduan-3.jpg" alt="pengaduan surat/tulos" />
+          <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
+        </div>
+        <div class="popup-content">
+          <img src="assets/images/pengaduan-2.jpg" alt="pengaduan telepon email" />
           <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
         </div>
       </div>
@@ -218,9 +240,9 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <script src="assets/js/global.js" async defer></script>
     <script>
+      // initialize card swiper
       var swiper = new Swiper('#slider-card', {
         navigation: {
           nextEl: '.swiper-button-next',
@@ -235,7 +257,29 @@
           },
         },
       })
+      const submitPengaduan = (e) => {
+        e.preventDefault()
+        $('#pop-form').removeClass('active')
+        $('#pop-detail').addClass('active')
+      }
+      const searchpengaduan = document.getElementById('checkpengaduan')
+      searchpengaduan.addEventListener('click', submitPengaduan, false)
+
+      const openPopUp = () => {
+        $('#modal-form').addClass('active')
+        $('#content-form').addClass('active')
+      }
+      const formNav = document.getElementById('form-modal')
+      formNav.addEventListener('click', openPopUp, false)
+
+      const closeFormModal = () => {
+        $('#modal-form').removeClass('active')
+        $('#content-form').removeClass('active')
+        console.log('ok')
+      }
+
+      const closeBtnForm = document.getElementById('closebtn')
+      closeBtnForm.addEventListener('click', closeFormModal, false)
     </script>
-    <script src="assets/js/global.js" async defer></script>
   </body>
 </html>

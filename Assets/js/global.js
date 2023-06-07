@@ -11976,16 +11976,6 @@ if (closeBtnModal) {
     closeBtnModal[c].addEventListener('click', closeModal, false)
   }
 }
-
-const submitPengaduan = (e) => {
-  e.preventDefault()
-  $('#pop-form').removeClass('active')
-  $('#pop-detail').addClass('active')
-}
-const searchpengaduan = document.getElementById('checkpengaduan')
-searchpengaduan.addEventListener('click', submitPengaduan, false)
-// $('#checkpengaduan').addEventListener('click', submitPengaduan, false)
-
 for (let c = 0; c < navigations.length; c++) {
   navigations[c].onclick = function (t) {
     this.classList.add('active'), $(this).siblings().removeClass('active'), t <= navigations.length - 1 && (contentContainer[t].classList.add('active'), $(contentContainer[t]).siblings('.tab').removeClass('active'))
