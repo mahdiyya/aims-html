@@ -1425,14 +1425,13 @@ table {
     flex-direction: column;
     justify-content: space-between;
     height: calc(100% - (var(--text-sm) + 4rem));
-
     padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
 
     .filter-container-overflow {
       overflow-y: auto;
       padding-right: 1rem;
       margin-bottom: 1rem;
+      padding-left: 1.5rem;
     }
 
     .checkbox-filter {
