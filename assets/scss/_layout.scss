@@ -293,11 +293,15 @@ main {
   }
   .main-graphic {
     position: relative;
-    width: 60%;
-    @media (max-width: 1100px) {
-      order: 2;
-      margin-left: 50%;
+    width: 50%;
+    margin-right: -5%;
+    margin-left: 4%;
+    @media (max-width: 1300px) {
+      width: 60%;
+      margin-right: 0;
+      margin-left: 0;
     }
+
     img {
       position: absolute;
       height: 80vh;
@@ -324,6 +328,14 @@ main {
       @media (max-width: 1100px) {
         height: 30vh;
         bottom: 0px;
+      }
+      &.mata {
+        &.buka {
+          animation: mata-buka 3000ms ease-in-out infinite;
+        }
+        &.tutup {
+          animation: mata-tutup 3000ms ease-in-out infinite;
+        }
       }
     }
   }
@@ -1930,6 +1942,72 @@ article {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes mata-buka {
+  0% {
+    opacity: 1;
+    translate: 0 0%;
+    scale: 100% 100%;
+  }
+  50% {
+    opacity: 1;
+    translate: 0% 0%;
+    scale: 100% 100%;
+  }
+  60% {
+    opacity: 1;
+    translate: 0% 0%;
+    scale: 100% 100%;
+  }
+  65% {
+    opacity: 1;
+    translate: 0% -24.5%;
+    scale: 100% 20%;
+  }
+
+  67% {
+    opacity: 0;
+  }
+  73% {
+    opacity: 0;
+    translate: 0% -24.5%;
+    scale: 100% 20%;
+  }
+  75% {
+    opacity: 1;
+    translate: 0 0%;
+    scale: 100% 100%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0%;
+    scale: 100% 100%;
+  }
+}
+
+@keyframes mata-tutup {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
