@@ -1570,6 +1570,33 @@ table {
 
   &.modal-barcode,
   &.modal-form {
+    .container {
+      border: 1px solid var(--color-gray);
+      box-shadow: var(--shadow);
+      height: 70vh;
+
+      img {
+        height: 60vh;
+        background: var(--color-white);
+        padding: 16px;
+      }
+      p {
+        background: var(--color-primary);
+        height: 10vh;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      @media (max-width: 1000px) {
+        width: 294px;
+        height: max-content;
+        img {
+          width: 294px;
+          height: auto;
+        }
+      }
+    }
     .popup-content-form {
       position: absolute;
       width: 100%;
