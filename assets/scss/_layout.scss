@@ -1541,6 +1541,13 @@ table {
             .row {
               justify-content: space-between;
               margin-bottom: 1rem;
+              &.card-container {
+                padding: 14px 16px;
+                border: 1px solid var(--color-grayLight);
+                .blocked {
+                  margin-bottom: 0;
+                }
+              }
             }
           }
           p {
@@ -1556,7 +1563,7 @@ table {
           }
 
           .blocked {
-            padding: 10px 1.5rem;
+            padding: 8px 1.5rem;
             display: flex;
             align-items: center;
             &.rounded {
