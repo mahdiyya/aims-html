@@ -293,13 +293,18 @@ main {
   }
   .main-graphic {
     position: relative;
-    width: 50%;
-    margin-right: -5%;
-    margin-left: 4%;
+    width: 55%;
+    margin-right: 0;
+    margin-left: 0;
     @media (max-width: 1300px) {
       width: 60%;
       margin-right: 0;
       margin-left: 0;
+    }
+    @media (min-width: 1400px) and (max-height: 748px) {
+      width: 50%;
+      margin-right: -4%;
+      margin-left: 4%;
     }
 
     img {
