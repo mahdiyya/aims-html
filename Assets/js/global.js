@@ -11981,3 +11981,47 @@ for (let c = 0; c < navigations.length; c++) {
     this.classList.add('active'), $(this).siblings().removeClass('active'), t <= navigations.length - 1 && (contentContainer[t].classList.add('active'), $(contentContainer[t]).siblings('.tab').removeClass('active'))
   }.bind(navigations[c], c)
 }
+
+// SCREENSAVER
+let timeScreenSaver = 10 //timeout limit, in seconds
+let isScreenSaverOn = false //true if modal screensaver/video shown
+let intervalID //id container for interval
+const screensaverClose = document.getElementsByClassName('close-screensaver') //btn close or back to menu
+
+const resetTime = () => (timeScreenSaver = 10) //timeout limit, in seconds
+
+//SCREEN SAVER COUNTER
+const screenSaverCountdown = () => {
+  if (timeScreenSaver === 0) {
+    isScreenSaverOn = true
+    $('#screensaver').addClass('active')
+    clearInterval(intervalID)
+    intervalID = null
+    resetTime()
+  } else {
+    timeScreenSaver--
+  }
+}
+
+//RESET SCREENSAVER AFTER CLOSING
+const stopScreenSaver = () => {
+  resetTime()
+  $('#screensaver').removeClass('active')
+  isScreenSaverOn = false
+  intervalID = setInterval(screenSaverCountdown, 1000)
+}
+
+window.addEventListener('mousemove', (e) => {
+  resetTime()
+})
+
+window.addEventListener('load', (e) => {
+  isScreenSaverOn ? {} : (intervalID = setInterval(screenSaverCountdown, 1000))
+})
+
+//CLOSE VIDEO/SS
+if (screensaverClose) {
+  for (let c = 0; c < screensaverClose.length; c++) {
+    screensaverClose[c].addEventListener('click', stopScreenSaver, false)
+  }
+}
